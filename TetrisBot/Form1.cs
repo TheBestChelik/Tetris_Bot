@@ -73,7 +73,11 @@ namespace TetrisBot
                 PlayBut.Enabled = false;
                 while (true)
                 {
-                    log.Text = MainPlaying.Start(MainCalibration.Board, MainCalibration.NextFig, log);
+                    log.Text = MainPlaying.Start(
+                        new Rectangle(Properties.Settings.Default.BoardPos,
+                        Properties.Settings.Default.BoardSize),
+                        new Rectangle(Properties.Settings.Default.NextFigurePos,
+                        Properties.Settings.Default.NextFigureSize));
                 }
             });
         }

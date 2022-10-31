@@ -12,8 +12,6 @@ namespace TetrisBot
 {
     static class MainCalibration
     {
-        public static Rectangle Board = new Rectangle(658, 188, 250, 500);
-        public static Rectangle NextFig = new Rectangle(462, 266, 125, 125);
         static Rectangle Get_Size_Pos(Bitmap screen, Rectangle userfield)
         {
             var rec = new Rectangle();
@@ -67,13 +65,13 @@ namespace TetrisBot
             var location = searchBitmap(sample, Screen, 0f);
             if (location == Rectangle.Empty)
                 return Properties.Settings.Default.CalibrationBoardError;
-            Board = Get_Size_Pos(Screen, location);
+            Rectangle Board = Get_Size_Pos(Screen, location);
             
             sample = new Bitmap(NextSample);
             location = searchBitmap(sample, Screen, 0);
             if (location == Rectangle.Empty)
                 return Properties.Settings.Default.CalibrationNextFigureError;
-            NextFig = Get_Size_Pos(Screen, location);
+            Rectangle NextFig = Get_Size_Pos(Screen, location);
 
 
             Properties.Settings.Default.BoardPos = Board.Location;
