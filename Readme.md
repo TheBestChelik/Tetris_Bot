@@ -19,7 +19,7 @@ TetrisBot is a windows program that was made to play [Tetris online](https://www
 
 It is required to run a calibration before  using the program. To do so, you have to take screenshots (<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> on Windows) of the [board and next figure filed](https://github.com/TheBestChelik/Tetris_Bot/blob/master/img/playingBoard.png?raw=true) and paste it to the [required spaces](https://github.com/TheBestChelik/Tetris_Bot/blob/master/img/image.png?raw=true), by clicking on them. Then, by pressing the <kbd>Run Calibration</kbd> button, start the calibration process. Likewise, you can adjust the pause between pressing keys on this tab, but 10 ms are Ok most of the time.
 ## Playing the Tetris
-![](https://github.com/TheBestChelik/Tetris_Bot/blob/master/img/Playing.gif?raw=true)
+![](https://github.com/TheBestChelik/Tetris_Bot/blob/master/img/Playing2.gif?raw=true)
 
 TetrisBot was designed to play only in [this Tetris](https://www.min2win.ru/gms/3336.html). Of course, the alghoritm is universal for all Tetris games, but the program is scanning field by taking screenshots, so it probably won't scan the field correctly in other Tetris games.
 
