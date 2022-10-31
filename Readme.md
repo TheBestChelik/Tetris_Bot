@@ -34,4 +34,4 @@ After generating all variants it looks for the most suitable one, by using an es
 The first version of the program was made in December 2020, it was console application. The main algorithm remained the same and most of it can be found in `Oldprogramm.cs`. In October 2022 the GUI and calibration mode were made.
 
 # Instalation
-Open visula studion and press the <kbd>Clone repository</kbd> button and paste the URL of the repository `https://github.com/TheBestChelik/Tetris_Bot`
+Open visual studio, press the <kbd>Clone repository</kbd> button and paste the URL of the repository `https://github.com/TheBestChelik/Tetris_Bot`
