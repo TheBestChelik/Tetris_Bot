@@ -42,5 +42,4 @@ Click <kbd>Code</kbd> and then <kbd>Open in Visual Studio</kbd>
 ### Second Method
 Open visual studio, press the <kbd>Clone repository</kbd> button and paste the URL of the repository `https://github.com/TheBestChelik/Tetris_Bot`
 ### Third method
-
 Download the code and open `TetrisBot.sln`
