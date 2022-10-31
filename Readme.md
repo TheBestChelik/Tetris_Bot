@@ -1,3 +1,13 @@
+# Table of Contents
+- [Table of Contents](#table-of-contents)
+- [TetrisBot](#tetrisbot)
+  - [Calibration mode](#calibration-mode)
+  - [Playing the Tetris](#playing-the-tetris)
+    - [How does it work?](#how-does-it-work)
+  - [History](#history)
+- [Instalation](#instalation)
+
+
 # TetrisBot
 TetrisBot is a windows program that was made to play [Tetris online](https://www.min2win.ru/gms/3336.html). The program is written in c# .Net and can work on windows devises.
 
@@ -22,3 +32,6 @@ After generating all variants it looks for the most suitable one, by using an es
 
 ## History
 The first version of the program was made in December 2020, it was console application. The main algorithm remained the same and most of it can be found in `Oldprogramm.cs`. In October 2022 the GUI and calibration mode were made.
+
+# Instalation
+Open visula studion and press the <kbd>Clone repository</kbd> button and paste the URL of the repository `https://github.com/TheBestChelik/Tetris_Bot`
