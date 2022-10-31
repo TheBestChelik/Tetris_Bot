@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TetrisBot.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="BoardPos" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="BoardSize" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="NextFigurePos" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="NextFigureSize" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="CalibrationInfo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Your calibrated data is: {0}Board:{0}Position: {1}{0}Size: {2}{0}Next figure field{0}Position: {3}{0}size: {4}</Value>
+    </Setting>
+    <Setting Name="MustCalibrate" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">You have to calibrate the programm before playing tetris. To do this, upload images of your board and next figure field and press Run Calibration button</Value>
+    </Setting>
+    <Setting Name="CalibrationWaitMessage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Please wait, calibration may take some time</Value>
+    </Setting>
+    <Setting Name="CalibrationBoardError" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Error, Board not found!</Value>
+    </Setting>
+    <Setting Name="CalibrationNextFigureError" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Error, Next figure field not found!</Value>
+    </Setting>
+    <Setting Name="PauseBtwPressingKeys" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="PauseBtwPresText" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Pause between pressing keys: {0} ms</Value>
+    </Setting>
+    <Setting Name="ErrorNext" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Next figure was not recognised!</Value>
+    </Setting>
+    <Setting Name="ConsoleString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">The scanned field: {0}{1}{0}New figure: {2}{0}Next Figure: {3}{0}Decided to move {4} and rotate {5}</Value>
+    </Setting>
+    <Setting Name="LogTextMustCalibrate" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">You have to calibrate the programm before playing tetris. To do this switch to Calibration tab , upload images of your board and next figure field and press Run Calibration button</Value>
+    </Setting>
+    <Setting Name="LogTextCalibrationDone" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">The TetrisBot is calibrated, press play to start the bot!</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
