@@ -10,7 +10,6 @@
     - [Second Method](#second-method)
     - [Third method](#third-method)
 
-
 # TetrisBot
 TetrisBot is a windows program that was made to play [Tetris online](https://www.min2win.ru/gms/3336.html). The program is written in c# .Net and can work on windows devises.
 
