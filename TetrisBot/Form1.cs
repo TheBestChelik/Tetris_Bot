@@ -1,3 +1,7 @@
+using System;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
 namespace TetrisBot
 {
     public partial class TetrisBot : Form
@@ -74,9 +78,9 @@ namespace TetrisBot
                 while (true)
                 {
                     log.Text = MainPlaying.Start(
-                        new Rectangle(Properties.Settings.Default.BoardPos,
+                        new System.Drawing.Rectangle(Properties.Settings.Default.BoardPos,
                         Properties.Settings.Default.BoardSize),
-                        new Rectangle(Properties.Settings.Default.NextFigurePos,
+                        new System.Drawing.Rectangle(Properties.Settings.Default.NextFigurePos,
                         Properties.Settings.Default.NextFigureSize));
                 }
             });

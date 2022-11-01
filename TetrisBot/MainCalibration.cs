@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualBasic.Logging;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Drawing.Imaging;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
@@ -12,7 +13,7 @@ namespace TetrisBot
 {
     static class MainCalibration
     {
-        static Rectangle Get_Size_Pos(Bitmap screen, Rectangle userfield)
+        static System.Drawing.Rectangle Get_Size_Pos(Bitmap screen, Rectangle userfield)
         {
             var rec = new Rectangle();
             int X = userfield.X;

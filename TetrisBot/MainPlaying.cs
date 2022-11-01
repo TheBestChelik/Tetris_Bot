@@ -13,7 +13,7 @@ namespace TetrisBot
 {
     public static class MainPlaying
     {
-        public static string Start(Rectangle Board, Rectangle NextFig)
+        public static string Start(System.Drawing.Rectangle Board, System.Drawing.Rectangle NextFig)
         {
             return OldProgramm.Main(Board.X, Board.Y, Board.Width, Board.Height, NextFig.X,NextFig.Y, NextFig.Width, NextFig.Height);
             

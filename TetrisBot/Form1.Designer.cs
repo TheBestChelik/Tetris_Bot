@@ -1,4 +1,6 @@
-﻿namespace TetrisBot
+﻿using System.Windows.Forms;
+
+namespace TetrisBot
 {
     partial class TetrisBot
     {
