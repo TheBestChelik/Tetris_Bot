@@ -5,7 +5,7 @@
   - [Playing the Tetris](#playing-the-tetris)
     - [How does it work?](#how-does-it-work)
   - [History](#history)
-  - [Instalation](#instalation)
+  - [Installation](#installation)
     - [First Method](#first-method)
     - [Second Method](#second-method)
     - [Third method](#third-method)
@@ -35,7 +35,7 @@ After generating all variants it looks for the most suitable one, by using an es
 ## History
 The first version of the program was made in December 2020, it was console application. The main algorithm remained the same and most of it can be found in `Oldprogramm.cs`. In October 2022 the GUI and calibration mode were made.
 
-## Instalation
+## Installation
 ### First Method
 Click <kbd>Code</kbd> and then <kbd>Open in Visual Studio</kbd>
 ### Second Method
