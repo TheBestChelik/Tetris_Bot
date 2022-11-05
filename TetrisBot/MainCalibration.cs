@@ -63,11 +63,11 @@ namespace TetrisBot
             string ToReturn = String.Empty;
             Bitmap sample = new Bitmap(BoardSample);
             Bitmap Screen = CaptureScreen();
-            var location = searchBitmap(sample, Screen, 0f);
+            var location = searchBitmap(sample,Screen, 0);
             if (location == Rectangle.Empty)
                 return Properties.Settings.Default.CalibrationBoardError;
             Rectangle Board = Get_Size_Pos(Screen, location);
-            
+
             sample = new Bitmap(NextSample);
             location = searchBitmap(sample, Screen, 0);
             if (location == Rectangle.Empty)
@@ -95,10 +95,20 @@ namespace TetrisBot
 
         private static Bitmap CaptureScreen()
         {
-            var image = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height, PixelFormat.Format32bppArgb);
-            var gfx = Graphics.FromImage(image);
-            gfx.CopyFromScreen(Screen.PrimaryScreen.Bounds.X, Screen.PrimaryScreen.Bounds.Y, 0, 0, Screen.PrimaryScreen.Bounds.Size, CopyPixelOperation.SourceCopy);
-            return image;
+            var Screenshot = new Bitmap(Screen.PrimaryScreen.Bounds.Width,
+                               Screen.PrimaryScreen.Bounds.Height,
+                               PixelFormat.Format32bppArgb);
+
+            var gfxScreenshot = Graphics.FromImage(Screenshot);
+
+            gfxScreenshot.CopyFromScreen(Screen.PrimaryScreen.Bounds.X,
+                                        Screen.PrimaryScreen.Bounds.Y,
+                                        0,
+                                        0,
+                                        Screen.PrimaryScreen.Bounds.Size,
+                                        CopyPixelOperation.SourceCopy);
+
+            return Screenshot;
         }
 
 
@@ -196,5 +206,79 @@ namespace TetrisBot
             return location;
 
         }
+        private static Rectangle IsInCapture(Bitmap searchFor, Bitmap searchIn)
+        {
+            int X, Y;
+            for (int x = 0; x < searchIn.Width; x++)
+            {
+                X = x;
+                for (int y = 0; y < searchIn.Height; y++)
+                {
+                    Y = y;
+                    bool invalid = false;
+                    int k = x, l = y;
+                    for (int a = 0; a < searchFor.Width; a++)
+                    {
+                        l = y;
+                        for (int b = 0; b < searchFor.Height; b++)
+                        {
+                            if (searchFor.GetPixel(a, b) != searchIn.GetPixel(k, l))
+                            {
+                                invalid = true;
+                                break;
+                            }
+                            else
+                                l++;
+                        }
+                        if (invalid)
+                            break;
+                        else
+                            k++;
+                    }
+                    if (!invalid)
+                        return new Rectangle(X, Y, searchFor.Width, searchFor.Height);
+                }
+            }
+            return Rectangle.Empty;
+        }
+        private static Rectangle SearchSlow(Bitmap searchFor, Bitmap searchIn)
+        {
+            Rectangle res = new Rectangle(0,0,0,0);
+            for (int x = 0; x < searchIn.Width; x++)
+            {
+                res.X = x;
+                for (int y = 0; y < searchIn.Height; y++)
+                {
+                    res.Y = y;
+                    bool invalid = false;
+                    int k = x, l = y;
+                    for (int a = 0; a < searchFor.Width; a++)
+                    {
+                        for (int b = 0; b < searchFor.Height; b++)
+                        {
+                            if (searchFor.GetPixel(a, b) != searchIn.GetPixel(k, l))
+                            {
+                                invalid = true;
+                                break;
+                            }
+                            else
+                                l++;
+                        }
+                        if (invalid)
+                            break;
+                        else
+                            k++;
+                    }
+                    if (!invalid)
+                    {
+                        MessageBox.Show("Pos found!");
+                        return res;
+                    }
+                        
+                }
+            }
+            return Rectangle.Empty;
+        }
+
     }
 }
