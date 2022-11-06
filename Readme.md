@@ -24,7 +24,7 @@ TetrisBot was designed to play only in [this Tetris](https://www.min2win.ru/gms/
 
 To start the TetrisBot, you have to run a calibration (when you first start the program), press the <kbd>Play</kbd> button and start the Tetris game on the site, by pressing any key.
 
-In the display, you may find the `scanned field` witch shows how TetrisBot sees the board, `New figure` and `Next Figure` demonstrate the [IDs](https://github.com/TheBestChelik/Tetris_Bot/blob/master/img/shpora.png?raw=true) of figures that are falling now and going to fall after this one. The next line tells what program decided to do with the falling figure (positive move means to move right on N cells, negative - to the left, rotate means rotate figure N times)
+In the display, you may find the `scanned field` wich shows how TetrisBot sees the board, `New figure` and `Next Figure` demonstrate the [IDs](https://github.com/TheBestChelik/Tetris_Bot/blob/master/img/shpora.png?raw=true) of figures that are falling now and going to fall after this one. The next line tells what program decided to do with the falling figure (positive move means to move right on N cells, negative - to the left, rotate means rotate figure N times)
 
 ### How does it work?
 
